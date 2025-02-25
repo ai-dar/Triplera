@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Triplera — Настройки профиля</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Triple A — Profile Settings</title>
+  <link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
   <header>
-    <h1>Настройки профиля</h1>
+    <h1>Profile Settings</h1>
     <nav>
       <ul>
-        <li><a href="main.html">Назад к ленте</a></li>
-        <li><a href="#" id="logout">Выход</a></li>
+        <li><a href="main.html" class="btn">Back to Feed</a></li>
+        <li><a href="#" id="logout" class="btn">Log Out</a></li>
       </ul>
     </nav>
   </header>
+
   <section>
     <form id="profileForm">
-      <label for="username">Имя пользователя:</label>
-      <input type="text" id="username" name="username" placeholder="Новое имя">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="New username">
       
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Новый email">
+      <input type="email" id="email" name="email" placeholder="New email">
       
-      <label for="password">Новый пароль:</label>
-      <input type="password" id="password" name="password" placeholder="Новый пароль">
+      <label for="password">New Password:</label>
+      <input type="password" id="password" name="password" placeholder="New password">
       
-      <button type="submit">Сохранить изменения</button>
+      <button type="submit" class="btn">Save Changes</button>
     </form>
   </section>
-  
+
   <script src="js/profile.js"></script>
 </body>
 </html>
