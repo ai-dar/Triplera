@@ -2,34 +2,34 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Triplera — Лента</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Triplera — Feed</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <header>
-    <h1>Triplera</h1>
+    <h1>Triple A</h1>
     <nav>
       <ul>
-        <li><a href="profile.html">Настройки профиля</a></li>
-        <li><a href="#" id="logout">Выход</a></li>
+        <li><a href="profile.html">Profile Settings</a></li>
+        <li><a href="#" id="logout">Logout</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="createPost">
     <form id="postForm">
-      <textarea id="postContent" placeholder="Что у вас на уме?" maxlength="280" required></textarea>
-      <button type="submit">Опубликовать</button>
+      <textarea id="postContent" placeholder="what's on your mind?" maxlength="280" required></textarea>
+      <button type="submit">Post</button>
     </form>
   </section>
 
   <!-- Блок выбора фильтра постов -->
   <section id="filter">
-    <label for="filterSelect">Фильтр постов:</label>
+    <label for="filterSelect">Post Filter:</label>
     <select id="filterSelect">
-      <option value="all">Все посты</option>
-      <option value="own">Мои посты</option>
-      <option value="others">Другие посты</option>
+      <option value="all">All Posts</option>
+      <option value="own">My Posts</option>
+      <option value="others">Other Posts</option>
     </select>
   </section>
 
