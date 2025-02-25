@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Triplera — Лента</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Triplera</h1>
+    <nav>
+      <ul>
+        <li><a href="#" id="logout">Выход</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="createPost">
+    <form id="postForm">
+      <textarea id="postContent" placeholder="Что у вас на уме?" maxlength="280" required></textarea>
+      <button type="submit">Опубликовать</button>
+    </form>
+  </section>
+
+  <!-- Блок выбора фильтра постов -->
+  <section id="filter">
+    <label for="filterSelect">Фильтр постов:</label>
+    <select id="filterSelect">
+      <option value="all">Все посты</option>
+      <option value="own">Мои посты</option>
+      <option value="others">Другие посты</option>
+    </select>
+  </section>
+
+
+  <section id="posts">
+    <!-- Здесь будут динамически отображаться посты -->
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

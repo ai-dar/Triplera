@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Triplera — Настройки профиля</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Настройки профиля</h1>
+    <nav>
+      <ul>
+        <li><a href="main.html">Назад к ленте</a></li>
+        <li><a href="#" id="logout">Выход</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <form id="profileForm">
+      <label for="username">Имя пользователя:</label>
+      <input type="text" id="username" name="username" placeholder="Новое имя">
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Новый email">
+      
+      <label for="password">Новый пароль:</label>
+      <input type="password" id="password" name="password" placeholder="Новый пароль">
+      
+      <button type="submit">Сохранить изменения</button>
+    </form>
+  </section>
+  
+  <script src="js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Triplera — Регистрация</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Регистрация в Triplera</h1>
+  <form id="registerForm">
+    <input type="text" id="registerUsername" placeholder="Имя пользователя" required>
+    <input type="email" id="registerEmail" placeholder="Email" required>
+    <input type="password" id="registerPassword" placeholder="Пароль" required>
+    <!-- Опциональное поле для кода администратора -->
+    <input type="text" id="adminCode" placeholder="Код администратора (если есть)">
+    <button type="submit">Зарегистрироваться</button>
+  </form>
+  <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+  <script src="js/register.js"></script>
+</body>
+</html>
