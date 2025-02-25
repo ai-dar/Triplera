@@ -17,5 +17,9 @@ router.put('/:id', verifyToken, postController.updatePost);
 
 // DELETE /api/posts/:id - удалить пост (только автор или админ)
 router.delete('/:id', verifyToken, postController.deletePost);
+router.post('/:id/like', verifyToken, postController.likePost);
+router.delete('/:id/like', verifyToken, postController.unlikePost);
+router.post('/:id/comment', verifyToken, postController.addComment);
+
 
 module.exports = router;
