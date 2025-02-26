@@ -83,6 +83,21 @@ function displayPosts(posts) {
         });
         postEl.appendChild(commentsDiv);
       }
+      if (userRole === 'admin' || post.author._id === getUserIdFromToken()) {
+        // Кнопка редактирования
+        const editBtn = document.createElement('button');
+        editBtn.classList.add('edit-btn');
+        editBtn.textContent = 'Edit';
+        editBtn.onclick = () => updatePost(post._id, post.content);
+        postEl.appendChild(editBtn);
+        
+        // Кнопка удаления
+        const deleteBtn = document.createElement('button');
+        deleteBtn.classList.add('delete-btn');
+        deleteBtn.textContent = 'Delete';
+        deleteBtn.onclick = () => deletePost(post._id);
+        postEl.appendChild(deleteBtn);
+      }
       
       // Append the post element to the posts container
       postsDiv.appendChild(postEl);
